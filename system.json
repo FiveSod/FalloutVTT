@@ -1,0 +1,38 @@
+{
+    "name": "Fallout The Roleplaying game",
+    "title": "Fallout the Roleplaying Game Unofficial",
+    "description": "An unofficial rendition of the Modiphius tabletop role playing game system.",
+    "version": "0.0.1",
+    "minimumCoreVersion": "0.6.4",
+    "compatibleCoreVersion": "0.7.9",
+    "templateVersion": 1,
+    "author": "Fivesod",
+    "esmodules": ["module/fallout.js"],
+    "styles": ["styles/fallout.css"],
+    "packs": [{
+			"label": "attributes",
+			"entity": "Item",
+			"name": "focuses",
+			"path": "./packs/attributes.db",
+			"system": "FalloutVTT"
+		}
+    ],
+    "languages": [{
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "es",
+      "name": "Spanish",
+      "path": "lang/es.json"
+    }],
+    "gridDistance": 5,
+    "gridUnits": "ft",
+    "primaryTokenAttribute": "HP",
+    "secondaryTokenAttribute": "AP",
+    "url": "https://github.com/FiveSod/FalloutVTT",
+    "manifest": "https://raw.githubusercontent.com/Fivesod/FalloutVTT/master/system.json",
+    "download": "https://github.com/Fivesod/FalloutVTT/archive/master.zip",
+    "license": "LICENSE.txt"
+}
