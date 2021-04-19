@@ -1,0 +1,231 @@
+{
+    "Actor": {
+        "types": ["character", "npc"],
+        "templates": {
+            "common": {
+                "age": 21,
+                "notes":"",
+                "AP": {
+                    "value": 0,
+                    "max": 6
+                },
+                "Attributes": {
+                    "Strength": {
+                        "label": "fallout.actor.attributes.strength",
+                        "value": 5,
+                        "selected": true
+                    },
+                    "Perception": {
+                        "label": "fallout.actor.attributes.perception",
+                        "value": 5,
+                        "selected": false
+                    },
+                    "Endurance": {
+                        "label": "fallout.actor.attributes.endurance",
+                        "value": 5,
+                        "selected": false
+                    },
+                    "Charisma": {
+                        "label": "fallout.actor.attributes.charisma",
+                        "value": 5,
+                        "selected": false
+                    },
+                    "Intelligence": {
+                        "label": "fallout.actor.attributes.intelligence",
+                        "value": 5,
+                        "selected": false
+                    },
+                    "Agility": {
+                        "label": "fallout.actor.attributes.agility",
+                        "value": 5,
+                        "selected": false
+                    },
+                    "Luck": {
+                        "label": "fallout.actor.attributes.luck",
+                        "value": 5,
+                        "selected": false
+                    }
+                },
+                "Skills": {
+                    "Athletics": {
+                        "label": "fallout.actor.skills.athletics",
+                        "value": 0,
+                        "selected": true
+                    },
+                    "Barter": {
+                        "label": "fallout.actor.skills.barter",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Big Guns": {
+                        "label": "fallout.actor.skills.bigguns",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Energy Weapons": {
+                        "label": "fallout.actor.skills.energyweapons",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Explosives": {
+                        "label": "fallout.actor.skills.explosives",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Lockpick": {
+                        "label": "fallout.actor.skills.lockpick",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Medicine": {
+                        "label": "fallout.actor.skills.medicine",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Melee Weapons": {
+                        "label": "fallout.actor.skills.meleeweapons",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Pilot": {
+                        "label": "fallout.actor.skills.pilot",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Repair": {
+                        "label": "fallout.actor.skills.repair",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Science": {
+                        "label": "fallout.actor.skills.science",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Small Guns": {
+                        "label": "fallout.actor.skills.smallguns",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Sneak": {
+                        "label": "fallout.actor.skills.sneak",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Speech": {
+                        "label": "fallout.actor.skills.speech",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Survival": {
+                        "label": "fallout.actor.skills.survival",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Throwing": {
+                        "label": "fallout.actor.skills.throwing",
+                        "value": 0,
+                        "selected": false
+                    },
+                    "Unarmed": {
+                        "label": "fallout.actor.skills.unarmed",
+                        "value": 0,
+                        "selected": false
+                    }
+                }
+            }
+        },
+        "character": {
+            "experience": 0,
+            "templates": ["common"],
+            "HP": {
+                "value": 0,
+                "max": 6
+            },
+            "origin": "",
+            "suborigin": "",
+            },
+            "caps": 0,
+            "prewarmoney": 0,
+        },
+        "npc": {
+            "templates": ["common"]
+        }
+    },
+    "Item": {
+        "types": ["item", "food", "chem", "weapon", "armor", "beverage", "apparel", "book"],
+        "templates": {
+            "common": {
+                "description": ""
+            }
+        },
+        "item": {
+            "templates": ["common"],
+            "caps": 0,
+            "quantity": 1
+        },
+        "food": {
+            "templates": ["common"],
+            "caps": 0,
+            "quantity": 1
+        },
+        "chem": {
+            "templates": ["common"],
+            "caps": 0,
+            "quantity": 1
+        },
+        "weapon": {
+            "templates": ["common"],
+            "damage": 0,
+            "caps": 0,
+            "type": {
+                "physical": false,
+                "energy": false,
+                "radiation": false,
+                "poison": false,
+            },
+            "qualities": {
+                "burst": false,
+                "breaking": false,
+                "persistant": false,
+                "piercing x": false,
+                "radioactive": false,
+                "spread": false,
+                "stun": false,
+                "vicious": false,.
+            }
+        },
+        "armor": {
+            "templates": ["common"],
+            "caps": 0,
+            "helmet": false,
+            "equipped": true
+            "protection": {
+                "physical": 0,
+                "energy": 0,
+                "radiation": 0,
+            }
+        },
+        "beverage": {
+            "templates": ["common"],
+            "caps": 0,
+            "quantity": 1
+        },
+        "apparel": {
+            "templates": ["common"],
+            "caps": 0,
+            "helmet": false,
+            "equipped": true
+            "protection": {
+                "physical": 0,
+                "energy": 0,
+                "radiation": 0,
+            }
+        },
+        "book": {
+            "templates": ["common"],
+            "caps": 0,
+            "read": false,
+        }
+    }
+}
