@@ -1,13 +1,11 @@
 {
     "Actor": {
-        "types": ["character", "npc"],
+        "types": ["hero", "mrhandy", "npc", "mob"],
         "templates": {
             "common": {
-                "age": 21,
-                "notes":"",
-                "AP": {
+                "hp": {
                     "value": 0,
-                    "max": 6
+                    "max": 60
                 },
                 "Attributes": {
                     "Strength": {
@@ -135,10 +133,10 @@
                 }
             }
         },
-        "character": {
-            "experience": 0,
+        "hero": {
+            "level": 1,
             "templates": ["common"],
-            "HP": {
+            "ap": {
                 "value": 0,
                 "max": 6
             },
@@ -146,7 +144,6 @@
             "suborigin": "",
             },
             "caps": 0,
-            "prewarmoney": 0,
         },
         "npc": {
             "templates": ["common"]
